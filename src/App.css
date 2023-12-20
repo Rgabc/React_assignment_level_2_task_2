@@ -1,38 +1,53 @@
-.App {
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;}
+.section{
+  height:30rem;
+  width:45rem;
+  transform: translate(20rem,15rem);
+}
+.tooltiptext{
+  width:20rem;
+  cursor: pointer;
+  height:4rem;
+ 
+}
+.tooltiptext2{
+  width:20rem;
+  height:4rem;
+  margin-top: 5rem;
+  cursor: pointer;
+ 
+
+}
+.tooltip{
+  
+  width:7.5rem;
+  height:5rem;
+  transform: translate(3rem,-10rem);
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
-}
+  background-color: red;
+  border-radius: 10px;
+  display: none;
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.tooltip2{
+  color: white;
+  background-color: red;
+  border-radius: 10px;
+  width:14rem;
+  height:5rem;
+  text-align: center;
+  transform: translateY(-7rem);
+  display: none;
+}
+.tooltiptext:hover .tooltip{
+
+  display: block;
+}
+.tooltiptext2:hover .tooltip2{
+ 
+  display: block;
 }
